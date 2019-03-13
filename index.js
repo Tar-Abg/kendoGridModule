@@ -41,6 +41,6 @@ export function createGrid(rootElement, cars) {
                     numeric.enable(false);
                 }
             }
-        });
+        })
     )
 }
