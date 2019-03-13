@@ -4,8 +4,11 @@ require ("@progress/kendo-ui/js/kendo.grid");
 export function createGrid(rootElement, cars) {
     
     rootElement.append(
-        $("<div class="grid">").kendoGrid({
+        $("<div>").kendoGrid({
+            
             columns: [
+                attributes: {
+            "class": "grid",}
             { title: "id", field: "id" },
             { title: "Model", field: "model" },
             { title: "Price", field: "price" },
