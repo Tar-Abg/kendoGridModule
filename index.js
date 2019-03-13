@@ -1,4 +1,4 @@
-import * as $ from "jquery";
+// import * as $ from "jquery";
 require ("@progress/kendo-ui/js/kendo.grid");
 
 export function createGrid(rootElement, cars) {
