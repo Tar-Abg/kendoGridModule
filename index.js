@@ -8,7 +8,8 @@ export function createGrid(rootElement, cars) {
             
             columns: [
                 attributes: {
-            "class": "grid",}
+            "class": "grid"},
+             cssClass: "grid",
             { title: "id", field: "id" },
             { title: "Model", field: "model" },
             { title: "Price", field: "price" },
