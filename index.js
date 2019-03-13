@@ -5,7 +5,7 @@ export function createGrid(rootElement, cars) {
     
     rootElement.append(
         $("<div>").kendoGrid({
-           
+           columns: [
             { title: "id", field: "id" },
             { title: "Model", field: "model" },
             { title: "Price", field: "price" },
