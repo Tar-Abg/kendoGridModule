@@ -38,10 +38,10 @@ export function createGrid(rootElement, cars) {
         editable: "popup",
 
         edit: function (e) {
-        if (!e.model.isNew()) {
-            var numeric = e.container.find("input[name=id]").data("kendoNumericTextBox");
-            numeric.enable(false);
-        }
+            if ( !e.model.isNew() ) {
+                var numeric = e.container.find("input[name=id]").data("kendoNumericTextBox");
+                numeric.enable(false);
+            }
         }
     });
 }
