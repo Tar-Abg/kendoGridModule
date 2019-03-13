@@ -5,10 +5,7 @@ export function createGrid(rootElement, cars) {
     
     rootElement.append(
         $("<div>").kendoGrid({
-            
-            columns: [
-                attributes: {
-            "class": "grid"},
+           
              cssClass: "grid",
             { title: "id", field: "id" },
             { title: "Model", field: "model" },
