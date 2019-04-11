@@ -1,6 +1,6 @@
 var $ = require ("jquery");
 import "@progress/kendo-ui/js/kendo.grid";
-require('../../src/main.css')
+require('./src/css/main.css')
 
 export function createGrid(rootElement, gridData, titleArray,gridName,date ) {
     rootElement.append(
