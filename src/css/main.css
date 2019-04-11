@@ -1,28 +1,30 @@
 .kendoGrid{
-    width: 500px;
-    font-size: 12px
+    width: 425px;
+    font-size: 10px;
+    font-weight: 400
 }
 .k-grid, .k-grid *   { 
     border: 0 !important;
 }
 .gridInform{
-    margin: 5px 20px 25px 20px;
+    margin: 5px 20px 10px 20px;
     color: #02536e;
-    width: 460px;
+    width: 360px;
     display: flex;
     justify-content: space-between;
 }
 .kendo{
-    border: 3px solid #02536e;
-    width: 520px;
+    border: 1px solid #02536e;
+    width: 430px;
     border-radius: 15px;
-    padding-left: 15px;
-    padding-bottom: 20px
+    padding-left: 7px;
+    padding-bottom: 10px
 }
-.k-grid-content table tbody tr td{
+.k-grid table tbody tr td{
     border-right: 5px solid white !important;
-    line-height: 30px !important
+    line-height: 20px !important
 }
 th:first-child{
     width: 120px
 }
+
