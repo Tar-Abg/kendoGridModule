@@ -1,46 +1,22 @@
-import * as $ from "jquery";
+var $ = require ("jquery");
 import "@progress/kendo-ui/js/kendo.grid";
+require('./src/css/main.css')
 
-export function createGrid(rootElement, cars) {
-    
+export function createGrid(rootElement, gridData, titleArray,gridName,date ) {
     rootElement.append(
-        $("<div>").kendoGrid({
-           columns: [
-            { title: "id", field: "id" },
-            { title: "Model", field: "model" },
-            { title: "Price", field: "price" },
-            { title: "Country", field: "country" },
-            {
-                title: "img",
-                field: "picture",
-                template: '<img src="#= picture #" alt="image"  class="img"/>',
-            },
-            { command: "edit" }
-            ],
-            dataSource: {
-            data: cars,
-            pageSize: 5,
-            schema: {
-                model: {
-                id: "id",
-                fields: {
-                    "id": { type: "number" }
-                }
-                }
-            }
-            },
-            pageable: true,
-            sortable: { mode: "multiple" },
-            groupable: true,
-            selectable: true,
-            editable: "popup",
-
-            edit: function (e) {
-                if ( !e.model.isNew() ) {
-                    var numeric = e.container.find("input[name=id]").data("kendoNumericTextBox");
-                    numeric.enable(false);
-                }
-            }
-        })
+        $("<div>").append(
+            $("<div>").append(`<div class="gridInform"><h3 class="gridName">${gridName}</h3><h3>${date}</h3></div>`),
+            $("<div>").kendoGrid({
+                columns:titleArray,
+                dataSource: {
+                data: gridData,
+                height: 100,
+                scrollable: false,
+                pageSize: 6,
+                },
+                selectable: "cell",
+                editable: "popup",
+            }).addClass('kendoGrid')
+        ).addClass('kendo')
     )
 }
