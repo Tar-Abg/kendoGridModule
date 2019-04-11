@@ -1,6 +1,6 @@
 var $ = require ("jquery");
 import "@progress/kendo-ui/js/kendo.grid";
-require('./src/css/main.css')
+require('../../src/main.css')
 
 export function createGrid(rootElement, gridData, titleArray,gridName,date ) {
     rootElement.append(
@@ -10,10 +10,8 @@ export function createGrid(rootElement, gridData, titleArray,gridName,date ) {
                 columns:titleArray,
                 dataSource: {
                 data: gridData,
-                height: 100,
-                scrollable: false,
-                pageSize: 6,
                 },
+                scrollable: false,
                 selectable: "cell",
                 editable: "popup",
             }).addClass('kendoGrid')
