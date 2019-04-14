@@ -16,5 +16,18 @@ export function createGrid(rootElement, gridData, titleArray,gridName,date ) {
                 editable: "popup",
             }).addClass('kendoGrid')
         ).addClass('kendo')
-    )
+    );
+    var gridTdvalues = $('.gridCellValue')
+    var tdText
+    for (let i = 0; i < gridTdvalues.length; i++) {
+        tdText = gridTdvalues[i].innerText
+        if(tdText.slice(0,1) == "-"){
+            gridTdvalues[i].style.color = "#8a0700"
+        } else if (tdText.slice(0,1) == "0") {
+            gridTdvalues[i].style.color = "#02536e"
+        } else {
+            gridTdvalues[i].style.color = "#109133"
+        }
+    }
+            
 }
