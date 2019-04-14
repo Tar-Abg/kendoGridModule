@@ -13,6 +13,9 @@
     display: flex;
     justify-content: space-between;
 }
+.gridInform h3{
+    font-size: 16px
+}
 .kendo{
     border: 1px solid #02536e;
     width: 430px;
