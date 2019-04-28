@@ -1,24 +1,23 @@
 .kendoGrid{
-    width: 425px;
-    font-size: 10px;
-    font-weight: 400
+    width: 650px;
+    font-size: 14px;
 }
-.k-grid, .k-grid *   { 
+.k-grid, .k-grid * { 
     border: 0 !important;
 }
 .gridInform{
     margin: 5px 20px 10px 20px;
     color: #02536e;
-    width: 360px;
+    width: auto;
     display: flex;
     justify-content: space-between;
 }
 .gridInform h3{
-    font-size: 16px
+    font-size: 20px
 }
 .kendo{
     border: 1px solid #02536e;
-    width: 430px;
+    width: auto;
     border-radius: 15px;
     padding-left: 7px;
     padding-bottom: 10px
@@ -27,7 +26,32 @@
     border-right: 5px solid white !important;
     line-height: 20px !important
 }
-th:first-child{
-    width: 120px
+.kendoGrid table tbody tr .first-cell{
+    width: 50px;
 }
-
+.kendo .k-header, .k-numeric-wrap,
+.k-pager-wrap, .k-panelbar .k-tabstrip-items .k-item, 
+.k-picker-wrap, .k-progressbar, .k-state-highlight,
+.k-tabstrip-items .k-item, .k-textbox, .k-toolbar{
+    background-color: #fff !important;
+    color:#02536e;
+}
+.kendo .k-grid .k-selectable tbody tr{
+    height: 40px;
+}
+.gridSelectCell{
+    max-width: 60px;
+    height: 4px !important;
+    color: #ff8500 !important;
+    background-color: #ff8500;
+    border: none;
+    margin-bottom: 10px;
+}
+.kendo:first-of-type div .gridSelectCell {
+    position: relative;
+    left: 300px !important;
+}
+.kendo:nth-of-type(2) div .gridSelectCell{
+    position: relative;
+    left: 260px !important;
+}
