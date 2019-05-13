@@ -9,7 +9,7 @@ export function createGrid(rootElement, gridData, titleArray,gridName,date ) {
             $("<div>").append('<hr class="gridSelectCell">'),
             $("<div>").kendoGrid({
                 columns:titleArray,
-                dataSource: {
+                    dataSource: {
                 data: gridData,
                 },
                 scrollable: false,
