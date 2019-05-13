@@ -1,6 +1,8 @@
 .kendoGrid{
-    width: 33.85vw;
+    width: auto;
+    height: auto;
     font-size: 0.7vw;
+    padding: 5px;
 }
 .k-grid, .k-grid * { 
     border: 0 !important;
@@ -17,7 +19,7 @@
 }
 .kendo{
     border: 1px solid #02536e;
-    width: 35%;
+    width: auto;
     border-radius: 15px;
     padding-left: 0.5vw;
     padding-bottom: 10px
@@ -48,15 +50,10 @@
 }
 .kendo:first-of-type div .gridSelectCell {
     position: relative;
-    left: 16.2vw !important;
+    left: 15.5vw !important;
 }
 .kendo:nth-of-type(2) div .gridSelectCell{
     position: relative;
-    left: 14.5vw !important;
+    left: 13.5vw !important;
 }
 
-@media screen and (max-width: 1125px) {
-    .kendo{
-        width: 35vw;
-    }
-  }
